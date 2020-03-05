@@ -2,7 +2,7 @@
 
 An application to search for entries within a given database:
 
-The application must be ran with a <b>--data</b> command line argument followed by a file path to read as a database.<br>
+The application must be run with a <b>--data</b> command line argument followed by a file path to read as a database.<br>
 There is also a sample.txt file you can work with.<br>
 
 The application works with an <b>Inverted Index</b> data structure,so it will only match words that fully match each query and not parts of a word.
