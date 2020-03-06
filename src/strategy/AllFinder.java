@@ -14,13 +14,16 @@ import java.util.Set;
 public class AllFinder extends Finder {
 
     @Override
-    public void find() {
+   public void find() {
+        boolean isFound = false;
         Set<Integer> masterSet = copySet();
         for (String key : query) {
             if (index.containsKey(key)) {
+                isFound = true;
                 masterSet.retainAll(index.get(key));
             }
         }
+        if (!isFound) masterSet.clear();
         print(masterSet);
     }
 }
